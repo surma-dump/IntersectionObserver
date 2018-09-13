@@ -137,6 +137,7 @@ limitations under the License.
           boundingClientRect: targetRect,
           intersectionRect: intersectionRect,
           intersectionRatio: intersectionRatio,
+          isIntersecting: intersectionRatio > 0 && intersectionRatio >= this._thresholds,
           target: target
         };
         Object.freeze(intersectionEntry);
